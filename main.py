@@ -77,7 +77,7 @@ def k_mer(reads, k):
 	k_mers = []
 	for x in reads:
 		if(len(x) > k ):
-			for(i=0, i<len(x)-k, i++):
+			for i in range(0, len(x)-k):
 				for y in k_mers:
 					if(x[i:i+k-1] != y):
 						k_mers.append(x[i:i+k-1])
